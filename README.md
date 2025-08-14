@@ -1,4 +1,4 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/FoyjQ7s2)
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/Sx8Ozf2d)
 # Bienvenidos a la Tarea de HTML y CSS
 
 ¡Hola a todos!
@@ -85,3 +85,14 @@ section {
 - Experimenta con combinaciones de colores que sean agradables a la vista.
 
 ¡Buena suerte y diviértanse creando su CV!
+
+
+# Este es mi trabajo
+
+Sé que hay muchas cosas que mejorar, especialmente en diseño, color y creatividad.  
+El manejo de **flex** y **grid** me costó; intenté usar una plantilla y replicarla.
+
+[Ver el proyecto aquí](https://dsaw-2025-ii.github.io/my-cv-part-b-Esteban9167/)
+
+Este es el juego de sushi 
+![Sushi](media/sushi.png)

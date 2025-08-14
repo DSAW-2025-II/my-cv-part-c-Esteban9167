@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="parent">
+        <div class="role">
+            <h2>Problem-Solver</h2>
+        </div>
+        <div class="name">
+            <h1> Esteban</h1>
+        </div>
+        <div class="name2">
+            <h1> Sequeda  Henao</h1>
+        </div>
+        <div class="sum">
+            <div class="info">
+                <h2>Professional Summary</h2>
+                <p> Motivated and adaptable Computer Science student with strong interest in Full Stack Development and
+                    Cybersecurity.
+                    Skilled in problem-solving, communication, and quick learning, with experience in customer service,
+                    debt
+                    collection, and mobile app development.
+                    Awarded for creating a mobile account management application that included inventory control, sales
+                    tracking,
+                    production monitoring, and general reporting, demonstrating initiative and the ability to turn ideas
+                    into
+                    functional solutions.
+                    Seeking to join a dynamic and innovative technology team to grow professionally while contributing
+                    to
+                    high-impact software solutions.
+
+                </p>
+            </div>
+            <div class="sPhoto"> </div>
+            <div class="contact">
+                <div class="Email"><strong>Email:</strong> estebansequeda2@gmail.com </div>
+                <div class="Phone"><strong>Phone:</strong> +57 315 552 2213</div>
+                <div class="Location"><strong>Location:</strong> Bogotá, Colombia (Open to relocation)</div>
+            </div>
+        </div>
+        <div class="photo">
+            <img src="media/fotoCV.jpg" alt="The best programmer (just kidding… for now)">
+        </div>
+        <div class="div6">
+            <h2>Education</h2>
+            <h4>B.Sc. in Computer Science (In Progress)</h4>
+            <p>Universidad de la sabana (Chia, Cundinamarca)</p>
+            <h4>High School Diploma </h4>
+            <p>Gimnasio Campestre Cristiano (Chia, Colombia)</p>
+            <h4>Python Programming Course (HarvardX)</h4>
+            <p>Nov 2024 (No Certificate)</p>
+        </div>
+        <div class="div7">
+            <h2>Technical & Soft Skills</h2>
+
+            <strong>Programming:</strong>
+            <p>Python | Fundamentals of Programming | Mobile App Development Projects</p>
+
+            <strong>Skills:</strong>
+            <p>Communication | Problem Solving | Teamwork | Adaptability | Fast Learning</p>
+
+            <strong>Languages:</strong>
+            <p>Spanish (Native), English (B1 improving)</p>
+
+            <strong>Interests:</strong>
+            <p>Full Stack Development | Cybersecurity | Software Solutions for Business Optimization</p>
+        </div>
+        <div class="div8">
+            <h2>Certifications & Recognitions</h2>
+            <h4>Recognition for Mobile App Development</h4>
+            <h5>Municipality of Sopó (May 2025)</h5>
+            <ul>
+                <li>Developed a mobile account management app featuring inventory, sales tracking, production
+                    management,
+                    and summary reporting.</li>
+                <li>Project completed under “Factoría de Arte y Sueño”, a strategic alliance between Universidad de La
+                    Sabana and the Municipality of Sopó.</li>
+            </ul>
+        </div>
+        <div class="div9">
+            <h2>Professional Experience</h2>
+            <h3>Call Center Agent</h3>
+            <h4>Customer Service & Debt Collection</h4>
+            <ul>
+                <li>Strengthened negotiation and persuasive communication skills through debt recovery and payment
+                    agreements.
+                    Delivered high-quality customer support, resolving inquiries and ensuring client satisfaction.</li>
+                <li>Improved resilience and adaptability under high-pressure environments.</li>
+            </ul>
+            <h3>Manufacturing Operator</h3>
+            <h4>Electronic Components for Refrigerators</h4>
+            <ul>
+                <li>Applied teamwork, discipline, and attention to detail in industrial production processes.</li>
+                <li>Gained experience in quality control and process compliance, ensuring production met required
+                    standards.
+                </li>
+            </ul>
+            <h3>Programming Tutor</h3>
+            <h4>Introduction to Programming</h4>
+            <ul>
+                <li>Supported students in learning basic programming concepts, improving my ability to explain technical
+                    topics
+                    clearly.</li>
+                <li>Developed problem-solving skills by simplifying complex concepts and guiding students step by step.
+                </li>
+            </ul>
+        </div>
+    </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+
+</html>

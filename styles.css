@@ -1,0 +1,316 @@
+/* Reset básico y scroll vertical */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    overflow-y: auto;
+    background-color: #fff;
+    /* Fondo blanco para toda la página */
+}
+
+/* GRID PRINCIPAL */
+.parent {
+    display: grid;
+    grid-template-columns: 30% 1fr 1fr 1.5fr 0.5fr;
+    /* Primera columna = 30% */
+    grid-template-rows: repeat(6, auto);
+    grid-column-gap: 15px;
+    /* Separación entre las columnas */
+    grid-row-gap: 15px;
+    /* Separación entre las filas */
+    padding: 80px;
+    /* Añadir mucho más espacio entre el borde exterior y el contenido */
+    max-width: 1500px;
+    margin: 0 auto;
+    background-color: #fff;
+    /* Fondo blanco para el grid */
+}
+
+/* CABECERA */
+.role {
+    grid-area: 1 / 1 / 2 / 2;
+    padding: 20px;
+    /* Padding añadido para separar del borde */
+    text-align: left;
+    /* Alinea el texto a la izquierda */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    background-color: #fff;
+    /* Fondo blanco */
+    border: 2px solid #000;
+    /* Borde visible por defecto */
+}
+
+.role h2 {
+    text-align: center;
+    /* Centra el texto solo en h2 dentro de .role */
+    padding: 10px 0;
+    /* Padding adicional para el h2 */
+    color: #000;
+    /* Color negro para todos los h2 */
+}
+
+.name {
+    grid-area: 1 / 2 / 2 / 4;
+    padding: 20px;
+    /* Padding añadido para separar del borde */
+    text-align: left;
+    /* Alinea el texto a la izquierda */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    background-color: #fff;
+    /* Fondo blanco */
+    color: #808080;
+    /* Color gris para el texto */
+    border: none;
+    /* Elimina el borde */
+}
+
+.name2 {
+    grid-area: 2 / 1 / 3 / 4;
+    padding: 20px;
+    /* Padding añadido para separar del borde */
+    text-align: left;
+    /* Alinea el texto a la izquierda */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    background-color: #fff;
+    /* Fondo blanco */
+    color: #808080;
+    /* Color gris para el texto */
+    border: none;
+    /* Elimina el borde */
+}
+
+/* SECCIÓN DE RESUMEN */
+.sum {
+    grid-area: 3 / 1 / 5 / 6;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, auto);
+    gap: 0;
+    text-align: left;
+    /* Alinea el contenido a la izquierda */
+    background-color: #fff;
+    /* Fondo blanco */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    padding: 20px;
+    /* Padding añadido para separar del borde */
+    color: #808080;
+    /* Color gris para el texto */
+    border: 2px solid #000;
+    /* Borde visible para la sección de resumen */
+    margin-top: 20px; /* Añadir un margen superior para evitar que se solape */
+}
+
+/* FOTO PRINCIPAL */
+.photo {
+    grid-area: 1 / 4 / 4 / 6;
+    width: 30vw;
+    max-width: 100%;
+    border-radius: 10px;
+    /* Bordes redondeados */
+    padding: 0px;
+    margin-right: 20px; /* Espacio entre la foto y el texto */
+}
+
+.photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* DIVS INFERIORES IZQUIERDA - ANCHO 30% (col 1) */
+.div6,
+.div7 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    /* Alinea el contenido a la izquierda */
+    background-color: #fff;
+    /* Fondo blanco */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    padding: 20px;
+    /* Padding añadido para separar del borde */
+    color: #808080;
+    /* Color gris para el texto */
+    border: 2px solid #000;
+    /* Borde visible */
+}
+
+.div6 {
+    grid-area: 5 / 1 / 6 / 2;
+}
+
+.div7 {
+    grid-area: 6 / 1 / 7 / 2;
+}
+
+/* DIVS INFERIORES DERECHA (resto de columnas) */
+.div8,
+.div9 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    /* Alinea el contenido a la izquierda */
+    background-color: #fff;
+    /* Fondo blanco */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    padding: 20px;
+    /* Padding añadido para separar del borde */
+    color: #808080;
+    /* Color gris para el texto */
+    border: none;
+    /* Elimina el borde */
+}
+
+.div8 {
+    grid-area: 5 / 2 / 6 / 6;
+}
+
+.div9 {
+    grid-area: 6 / 2 / 7 / 6;
+}
+
+/* ESTILO GENERAL PARA LOS DIVS DEL GRID */
+.parent>div {
+    display: block;
+    /* Cambiado de flex a block para alineación a la izquierda */
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #808080;
+    /* Color gris para el texto */
+    text-align: left;
+    /* Alinea el contenido a la izquierda */
+    background-color: #fff;
+    /* Fondo blanco */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    padding: 20px;
+    /* Padding añadido para separar del borde */
+}
+
+/* Grid interno sum */
+.sum>.sPhoto {
+    grid-area: 1 / 4 / 3 / 6;
+}
+
+.sum>.info {
+    grid-area: 1 / 1 / 3 / 4;
+}
+
+.sum>.contact {
+    grid-area: 3 / 1 / 5 / 6;
+}
+
+/* TÍTULOS CON LA FUENTE PLAYFAIR DISPLAY SC */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Playfair Display SC', serif;
+    /* Aplicar la fuente Playfair Display SC */
+    color: #000;
+    /* Color negro para los títulos */
+}
+
+/* Justificar solo h1 a la derecha */
+h1 {
+    text-align: right;
+    /* Justifica el texto a la derecha */
+    font-size: 6rem; /* Hace el texto del h1 mucho más grande */
+    line-height: 1.2; /* Ajusta la altura de la línea si el texto se ve muy alto */
+    margin: 0; /* Asegura que no haya márgenes adicionales */
+    padding: 0; /* Asegura que no haya padding adicional */
+}
+
+/* PÁRRAFOS Y TEXTO NORMAL */
+p,
+.name,
+.name2,
+.sum {
+    color: #808080;
+    /* Color gris para el texto */
+}
+
+/* VISTA MÓVIL */
+@media (max-width: 768px) {
+    .parent {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        padding-left: 0;
+        /* Elimina padding lateral en móvil */
+        padding-right: 0;
+        /* Elimina padding lateral en móvil */
+    }
+
+    .role,
+    .name,
+    .name2,
+    .sum,
+    .photo,
+    .div6,
+    .div7,
+    .div8,
+    .div9 {
+        grid-area: unset;
+        width: 100%;
+        border-radius: 10px;
+        /* Bordes redondeados */
+        padding: 20px;
+        /* Padding añadido para separar del borde */
+        color: #808080;
+        /* Color gris para el texto */
+    }
+
+    .photo {
+        width: 100%;
+    }
+
+    .photo img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        /* Bordes redondeados */
+    }
+
+    .sum {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 8px;
+        text-align: left;
+        /* Alineación a la izquierda en móvil */
+        border-radius: 10px;
+        /* Bordes redondeados */
+        padding: 20px;
+        /* Padding añadido para separar del borde */
+        color: #808080;
+        /* Color gris para el texto */
+    }
+
+    .sum>.sPhoto,
+    .sum>.info,
+    .sum>.contact {
+        grid-area: unset;
+    }
+}
